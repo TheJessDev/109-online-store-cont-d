@@ -1,0 +1,19 @@
+.product {
+    width: 250px;
+    height: 350px;
+    border: 2px solid blue;
+    margin: 20px 10px 20px 10px;
+    padding: 10px;
+    
+}
+
+.product img {
+    width:180px;
+    height:130px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.prod-price {
+    margin-top: 15px;
+}
