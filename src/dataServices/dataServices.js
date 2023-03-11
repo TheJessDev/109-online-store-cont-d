@@ -1,4 +1,4 @@
-var catalog = [
+var catalog = [ 
     {
         "title":"High Top",
         "category":"Shoes",

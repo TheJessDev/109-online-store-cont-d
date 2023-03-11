@@ -3,7 +3,7 @@ import "./product.css";
 import QuantityPicker from "./quantityPicker";
 import {useEffect} from "react";
 
-function Product(props) {
+function Product(props) { 
 
     useEffect(function() {
         console.log("my product");

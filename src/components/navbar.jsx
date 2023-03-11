@@ -1,5 +1,5 @@
 import "./navbar.css";
-function Navbar() {
+function Navbar() { 
     return(
         <div> Menu </div>
     
