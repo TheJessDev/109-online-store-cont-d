@@ -1,19 +1,39 @@
 .product {
-    width: 250px;
-    height: 350px;
+    /* display:flex;
+    flex-wrap: wrap; */
+    width: 250px; 
+    height: 350px; 
     border: 2px solid blue;
+    border-radius: 5px;
     margin: 20px 10px 20px 10px;
     padding: 10px;
     
+}
+.product:hover {
+    background-color:lightgoldenrodyellow;
+}
+
+.product h4 {
+    font-size: 18px;
 }
 
 .product img {
     width:180px;
     height:130px;
-    margin-bottom: 20px;
-    margin-top: 12px;
+    margin-bottom: 15px;
+    margin-top: 7px;
 }
 
 .prod-price {
-    margin-top: 15px;
+    margin-top: 10px;
+}
+
+.total-price {
+    display:flex;
+    justify-content: space-between;
+    padding: 0 14px 0 14px;
+}
+
+.btn {
+    margin-top: 20px;
 }

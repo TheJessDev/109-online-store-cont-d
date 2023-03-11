@@ -3,22 +3,34 @@ import "./product.css";
 import QuantityPicker from "./quantityPicker";
 import {useEffect} from "react";
 
-function Product() {
+function Product(props) {
 
     useEffect(function() {
         console.log("my product");
     }, []);
+
     return(
         <div className="product">
-            <h4>Product Name</h4>
+            <h4>{props.data.title}</h4>
 
-            <img src="https://images.unsplash.com/photo-1548100721-15f0e76035c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="product"></img>
+            <img src={"/img/" + props.data.image} alt=""></img>
+
+            <div className="total-price">
+                <lable>Total</lable>
+                <lable>Price</lable>    
+            </div>
+
+            <div className="total-price">
+                <lable>$0.00</lable>
+                <lable>${props.data.price}</lable>
+            </div>
            
             <QuantityPicker></QuantityPicker>
-            <p className="prod-price">$39.99</p>
+            {/* <p className="prod-price">$39.99</p> */}
             
             <button type="button" className="btn btn-dark">Add</button>
         </div>
     );
 }
+
 export default Product;

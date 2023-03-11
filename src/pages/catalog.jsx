@@ -11,7 +11,7 @@ function Catalog () {
     useEffect(function() {
         console.log("component");
         loadCatalog();
-    },[]);
+    },[]); 
 
 
     function loadCatalog() { // get the products from the service
@@ -28,13 +28,11 @@ function Catalog () {
             <h5>We have {product.length} new products for you</h5>
            
             <div className="catalog-item">
-                <Product></Product>
-                <Product></Product>
-                <Product></Product>
-                <Product></Product>
-                <Product></Product>
+                {product.map((p)=>
+                (<Product data= {p}></Product>) )}
             </div>
         </div>
     );
 }
 export default Catalog;
+//
