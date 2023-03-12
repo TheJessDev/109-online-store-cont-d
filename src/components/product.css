@@ -3,14 +3,16 @@
     flex-wrap: wrap; */ 
     width: 250px; 
     height: 350px; 
-    border: 2px solid blue;
+    border: 2px solid #00257A;
     border-radius: 5px;
     margin: 20px 10px 20px 10px;
     padding: 10px;
+    background-color:#F0F0F0;
+    
     
 }
 .product:hover {
-    background-color:lightgoldenrodyellow;
+    background-color:lightgray;
 }
 
 .product h4 {
@@ -36,4 +38,20 @@
 
 .btn {
     margin-top: 20px;
+
 }
+
+.product .add-btn {
+    background-color: #004BFA;
+}
+.product .add-btn:hover {
+    background-color:
+}
+
+
+/* @media (max-width:350px) {
+    .product {
+
+    }
+    
+} */

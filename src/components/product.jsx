@@ -28,7 +28,7 @@ function Product(props) {
             <QuantityPicker></QuantityPicker>
             {/* <p className="prod-price">$39.99</p> */}
             
-            <button type="button" className="btn btn-dark">Add</button>
+            <button type="button" className="add-btn btn btn-dark">Add</button>
         </div>
     );
 }

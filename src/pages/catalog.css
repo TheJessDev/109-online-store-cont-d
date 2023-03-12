@@ -1,14 +1,22 @@
 .catalog {
-    max-height:900vh;
-    border: 2px solid purple;  
+    max-height:900vh; 
+    background-color: #f2f2f2; 
 }
 
 
 .catalog-item {
-    display:inline-flex;   
+    display:flex;  
+    flex-wrap:wrap; 
+    justify-content: center;
    
 }
 
 .catalog h2 {
-    margin-top: 30px;
+    padding-top: 15px;
+  
+         
+}
+
+.catalog.add-btn {
+    background-color:#004BFA;
 }

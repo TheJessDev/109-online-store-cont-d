@@ -12,7 +12,7 @@ import 'bootstrap';
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1>The Best Place to Shop</h1>
       <Navbar></Navbar>
       <Catalog></Catalog>
 
