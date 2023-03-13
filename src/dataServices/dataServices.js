@@ -1,65 +1,65 @@
 var catalog = [ 
     {
         "title":"High Top",
-        "category":"Shoes",
+        "category":"Men's",
         "price":39.99, 
         "image":"high-top.jpg",
         "_id":"0001"
     },
 
     {
-        "title":"High Top",
-        "category":"Shoes",
-        "price":39.99, 
-        "image":"high-top.jpg",
+        "title":"Nike Hike",
+        "category":"Men's",
+        "price":49.99, 
+        "image":"nike-hike.jpg",
         "_id":"0002"
     },
 
     {
-        "title":"High Top",
-        "category":"Shoes",
+        "title":"Teal Racer",
+        "category":"Men's",
         "price":39.99, 
-        "image":"high-top.jpg",
+        "image":"teal.jpg",
         "_id":"0003"
     },
 
     {
-        "title":"High Top",
-        "category":"Shoes",
-        "price":39.99, 
-        "image":"high-top.jpg",
+        "title":"Addidas Shell Toe",
+        "category":"Men's",
+        "price":59.99, 
+        "image":"white-shell-toe.jpg",
         "_id":"0004"
     },
 
     {
-        "title":"High Top",
-        "category":"Shoes",
-        "price":39.99, 
-        "image":"high-top.jpg",
+        "title":"Ankle Boots",
+        "category":"Women's",
+        "price":49.99, 
+        "image":"ankle-boots.jpg",
         "_id":"0005"
     },
 
     {
-        "title":"High Top",
-        "category":"Shoes",
-        "price":39.99, 
-        "image":"high-top.jpg",
+        "title":"Decorative High Heels",
+        "category":"Women's",
+        "price":59.99, 
+        "image":"deco-heels.jpg",
         "_id":"0006"
     },
 
     {
-        "title":"High Top",
-        "category":"Shoes",
-        "price":39.99, 
-        "image":"high-top.jpg",
+        "title":"Glitter High Heels",
+        "category":"Women's",
+        "price":49.99, 
+        "image":"glitter-heels.jpg",
         "_id":"0007"
     },
 
     {
-        "title":"High Top",
-        "category":"Shoes",
-        "price":39.99, 
-        "image":"high-top.jpg",
+        "title":"Canvas Flats",
+        "category":"Women's",
+        "price":29.99, 
+        "image":"canvas-flats.jpg",
         "_id":"0008"
     },
 ];

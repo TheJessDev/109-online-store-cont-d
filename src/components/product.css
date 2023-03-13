@@ -3,7 +3,7 @@
     flex-wrap: wrap; */ 
     width: 250px; 
     height: 350px; 
-    border: 2px solid #00257A;
+    border-right: 2px solid #00257A;
     border-radius: 5px;
     margin: 20px 10px 20px 10px;
     padding: 10px;
@@ -17,6 +17,8 @@
 
 .product h4 {
     font-size: 18px;
+    font-family: 'Open Sans', sans-serif; 
+    letter-spacing: 1px;
 }
 
 .product img {
@@ -42,16 +44,20 @@
 }
 
 .product .add-btn {
-    background-color: #004BFA;
+    /*background-color: #004BFA;*/
+    background-color:#157347;
 }
 .product .add-btn:hover {
-    background-color:
+    background-color:#004BFA;
 }
 
 
-/* @media (max-width:350px) {
-    .product {
+ @media (max-width:350px) {
+    .product{
+        width:85%;
+        margin-left: 2%;
+        height: auto;
 
     }
     
-} */
+}

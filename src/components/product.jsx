@@ -1,13 +1,24 @@
 
 import "./product.css";
 import QuantityPicker from "./quantityPicker";
-import {useEffect} from "react";
+import {useEffect,useState} from "react";
 
 function Product(props) { 
+    const [quantity, setQuantity] = useState(1);
 
-    useEffect(function() {
+    useEffect(function () {
         console.log("my product");
     }, []);
+
+    function onQuantityChange(qty) {
+        console.log("new value: " + qty);
+        setQuantity(qty);
+    }
+
+    function getTotal() {
+        let total=props.data.price*quantity;
+        return total.toFixed(2);
+    }
 
     return(
         <div className="product">
@@ -16,19 +27,16 @@ function Product(props) {
             <img src={"/img/" + props.data.image} alt=""></img>
 
             <div className="total-price">
-                <lable>Total</lable>
-                <lable>Price</lable>    
+                <lable>Price {props.data.price.toFixed(2)}</lable>    
+                <lable>Total {getTotal()}</lable>
             </div>
 
-            <div className="total-price">
-                <lable>$0.00</lable>
-                <lable>${props.data.price}</lable>
-            </div>
+          
            
-            <QuantityPicker></QuantityPicker>
+            <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
             {/* <p className="prod-price">$39.99</p> */}
             
-            <button type="button" className="add-btn btn btn-dark">Add</button>
+            <button type="button" className="add-btn btn btn-dark">Buy</button>
         </div>
     );
 }

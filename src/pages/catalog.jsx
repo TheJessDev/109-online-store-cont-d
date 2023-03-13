@@ -19,10 +19,11 @@ function Catalog () {
     function loadCatalog() { // get the products from the service
         let service= new DataServices();
         let prods = service.getProducts();
-        // console.log(prods);
+        console.log(prods);
         setProduct(prods);
-        let cat=["Shoes"]; //create a clothing category or men/women/kids...
+        let cat=["Men's","Women's"]; //create category men/women
         setCategory(cat);
+        setProdsToDisplay(prods);
     }
 
     function filter(category) {
@@ -35,23 +36,33 @@ function Catalog () {
             if(prod.category === category){
                 list.push(prod);
             }
-            setProdsToDisplay(list);
+            setProdsToDisplay(list);   
         }
+    }
+
+    function clearFilter() {
+        setProdsToDisplay(product);
 
     }
 
     return(
         <div className="catalog">
-            <h2>Hello check out our stuff</h2>
-            <h5>We have {product.length} new products for you</h5>
-            {category.map(c=> <button onClick={()=>filter(c)} className="add-btn btn btn-success btn-filter">{c}</button>)}
+            <h2>Check out our Shoes!</h2>
+            <h5>We have {product.length} new shoes for you</h5>
+
+            <button onClick={clearFilter} className="btn btn-success btn-filter">All</button>
+
+            {category.map(c=> <button key= {c}onClick={()=>filter(c)} className="btn btn-success btn-filter">{c}</button>)}
+            
            
             <div className="catalog-item">
                 
-                {/* {prodsToDisplay*/product.map((p)=> 
-                (<Product key={p.id} data= {p}></Product>) )}
+                {prodsToDisplay.map((p) => 
+                (<Product key={p._id} data={p}></Product>))}
+                
             </div>
         </div>
     );
 }
 export default Catalog;
+//{prodsToDisplay} line 55?

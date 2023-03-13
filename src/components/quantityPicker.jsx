@@ -1,7 +1,7 @@
 import "./quantityPicker.css";
 import {useState} from "react";
 
-function QuantityPicker() {
+function QuantityPicker(props) {
 
     let [quantity, setQuantity] = useState(1); // State variable = no change
 
@@ -9,20 +9,20 @@ function QuantityPicker() {
         if (quantity===1) return;
         let val = quantity -1;
         setQuantity(val);
-       // console.log("click decrease");
+        props.onChange(val); // notifying the parent component   
     }
 
     function increase() {
         let val = quantity +1;
         setQuantity(val);
-       // console.log("click increase");
+        props.onChange(val);  
     }
 
 
     return(
         <div className="qt-picker">
             <div>
-                <button disabled={quantity===1}onClick={decrease}> - </button>
+                <button disabled={quantity === 1} onClick={decrease}>{""} - {""} </button>
                 <label> {quantity} </label>
                 <button onClick={increase}> + </button>
             </div>

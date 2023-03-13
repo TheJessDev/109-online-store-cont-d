@@ -1,6 +1,8 @@
 .catalog {
     max-height:900vh; 
     background-color: #f2f2f2; 
+    font-family: 'Open Sans', sans-serif; 
+    letter-spacing: .5px;
 }
 
 
@@ -13,10 +15,10 @@
 
 .catalog h2 {
     padding-top: 15px;
-  
-         
+    font-family: 'Open Sans', sans-serif; 
+    text-decoration: underline;  
+    line-height: 60px; 
+    letter-spacing: .5px;
 }
 
-.catalog.add-btn {
-    background-color:#004BFA;
-}
+
