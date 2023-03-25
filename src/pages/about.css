@@ -1,0 +1,21 @@
+.About-page {
+    max-height:900vh; 
+}
+
+.about {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 25px 100px 25px 100px;
+    letter-spacing: .5px;
+}
+
+.email {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    letter-spacing: .5px;
+    padding: 5px 0px 25px 0px;
+    margin-bottom: 179px;
+    
+}

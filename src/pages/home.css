@@ -1,0 +1,40 @@
+
+
+.Home {
+    background: #f2f2f2;
+}
+
+.Home h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Main-photo img{
+    margin-bottom: 20px;
+}
+
+.Home-imgs img {
+    display:flex;
+    width: 288.75px;
+    height: 234px;
+    margin: 15px 0 20px 15px;
+    
+
+}
+
+.Home-imgs {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+}
+
+@media (max-width:350px) {
+    .product{
+        width:85%;
+        margin-left: 2%;
+        height: auto;
+
+    }
+}

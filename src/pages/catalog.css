@@ -1,6 +1,6 @@
 .catalog {
     max-height:900vh; 
-    background-color: #f2f2f2; 
+    background-color: #FFFFFF; 
     font-family: 'Open Sans', sans-serif; 
     letter-spacing: .5px;
 }
@@ -14,11 +14,35 @@
 }
 
 .catalog h2 {
-    padding-top: 15px;
+    padding-bottom: 5px;
     font-family: 'Open Sans', sans-serif; 
     text-decoration: underline;  
     line-height: 60px; 
-    letter-spacing: .5px;
+    letter-spacing: 1px;
+    background-color:#1C1C1C ;
+    color: #FFFFFF;
 }
+
+.catalog h5 {
+    color: #e7174b;
+}
+
+.catalog .btn {
+   margin-right: 8px;
+   margin-bottom: 8px;
+   color:#FFFFFF;
+   background-color: #1C1C1C;
+   border: #e7174b;
+}
+
+.catalog .product .qt-picker div button {
+    background-color: rgb(229, 229, 229);
+    color:#1C1C1C;
+}
+.catalog-item .product button {
+    background-color: #1a5423;
+    color:#FFFFFF;
+} 
+
 
 

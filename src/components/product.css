@@ -1,6 +1,4 @@
 .product {
-    /* display:flex;
-    flex-wrap: wrap; */ 
     width: 250px; 
     height: 350px; 
     border-right: 2px solid #00257A;
@@ -8,8 +6,7 @@
     margin: 20px 10px 20px 10px;
     padding: 10px;
     background-color:#F0F0F0;
-    
-    
+    box-shadow: 2px 10px 8px 2px lightgrey;   
 }
 .product:hover {
     background-color:lightgray;
@@ -38,6 +35,7 @@
     padding: 0 14px 0 14px;
 }
 
+
 .btn {
     margin-top: 20px;
 
@@ -46,6 +44,7 @@
 .product .add-btn {
     /*background-color: #004BFA;*/
     background-color:#157347;
+
 }
 .product .add-btn:hover {
     background-color:#004BFA;

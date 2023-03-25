@@ -47,12 +47,14 @@ function Catalog () {
 
     return(
         <div className="catalog">
-            <h2>Check out our Shoes!</h2>
+            <h2>New Arrivals</h2>
             <h5>We have {product.length} new shoes for you</h5>
 
+        
             <button onClick={clearFilter} className="btn btn-success btn-filter">All</button>
 
             {category.map(c=> <button key= {c}onClick={()=>filter(c)} className="btn btn-success btn-filter">{c}</button>)}
+            
             
            
             <div className="catalog-item">

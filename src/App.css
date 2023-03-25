@@ -5,14 +5,19 @@
 .App h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  background-color:#8C0335;
+  background-color:#1c1c1c;
   margin: 0;
   color:#f2f2f2;
   letter-spacing: 1.5px;
   padding-top: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
+.App h5 {
+  padding-top: 20px;
+  color: #e7174b;
+  font-size: 30px;
+}
 
 
 .App-logo {

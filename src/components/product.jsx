@@ -27,16 +27,17 @@ function Product(props) {
             <img src={"/img/" + props.data.image} alt=""></img>
 
             <div className="total-price">
-                <lable>Price {props.data.price.toFixed(2)}</lable>    
-                <lable>Total {getTotal()}</lable>
+                <lable>Price ${props.data.price.toFixed(2)}</lable>    
+                <lable>Total ${getTotal()}</lable>
             </div>
 
           
-           
+            
             <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
-            {/* <p className="prod-price">$39.99</p> */}
+            
             
             <button type="button" className="add-btn btn btn-dark">Buy</button>
+            
         </div>
     );
 }
