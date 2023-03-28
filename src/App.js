@@ -8,6 +8,8 @@ import About from "./pages/about";
 import Cart from "./pages/cart";
 import Admin from "./pages/admin";
 
+import GlobalProvider from './state/globalProvider';
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap'; 
@@ -22,25 +24,23 @@ function App() {
   return (
     <div className="App">
       
-
-      <BrowserRouter>
-
-      <Navbar></Navbar>
-
-      <h5>Sale going on Now!</h5>
-      <h1>The Best Online Shoe Store</h1>
-
-     <Routes>
-      <Route path='/' element={<Home/>}></Route>
-      <Route path='/catalog' element={<Catalog/>}></Route>
-      <Route path='/about' element={<About/>}></Route>
-      <Route path='/cart' element={<Cart/>}></Route>
-      <Route path='/admin' element={<Admin/>}></Route>
-     </Routes>
-      
-      
-      <Footer></Footer>
-      </BrowserRouter>
+      <GlobalProvider>
+        <BrowserRouter>
+          <Navbar></Navbar>
+          <h5>Sale going on Now!</h5>
+          <h1>The Best Online Shoe Store</h1>
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/catalog' element={<Catalog/>}></Route>
+          <Route path='/about' element={<About/>}></Route>
+          <Route path='/cart' element={<Cart/>}></Route>
+          <Route path='/admin' element={<Admin/>}></Route>
+        </Routes>
+          
+          
+          <Footer></Footer>
+        </BrowserRouter>
+      </GlobalProvider>
     </div>
   );
 }
