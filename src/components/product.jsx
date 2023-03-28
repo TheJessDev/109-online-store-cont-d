@@ -3,6 +3,7 @@ import "./product.css";
 import QuantityPicker from "./quantityPicker";
 import {useEffect,useState} from "react";
 
+
 function Product(props) { 
     const [quantity, setQuantity] = useState(1);
 
@@ -20,6 +21,10 @@ function Product(props) {
         return total.toFixed(2);
     }
 
+    function handleAddClick() {
+        console.log("Adding to cart");
+    }
+
     return(
         <div className="product">
             <h4>{props.data.title}</h4>
@@ -32,11 +37,10 @@ function Product(props) {
             </div>
 
           
-            
+           
             <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
-            
-            
-            <button type="button" className="add-btn btn btn-dark">Buy</button>
+        
+            <button type="button" className="add-btn btn btn-dark" onClick={(handleAddClick)}>Buy</button>
             
         </div>
     );

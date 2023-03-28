@@ -1,5 +1,5 @@
 .About-page {
-    max-height:900vh; 
+    min-height:85vh; 
 }
 
 .about {
@@ -16,6 +16,6 @@
     text-align: center;
     letter-spacing: .5px;
     padding: 5px 0px 25px 0px;
-    margin-bottom: 179px;
+    /* margin-bottom: 179px; */
     
 }

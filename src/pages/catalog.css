@@ -1,5 +1,5 @@
 .catalog {
-    max-height:900vh; 
+    min-height:90vh; 
     background-color: #FFFFFF; 
     font-family: 'Open Sans', sans-serif; 
     letter-spacing: .5px;

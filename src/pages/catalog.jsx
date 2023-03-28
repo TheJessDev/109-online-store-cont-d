@@ -2,7 +2,8 @@
 import Product from "../components/product";
 import "./catalog.css";
 import {useEffect, useState} from "react";
-import DataServices from "../dataServices/dataServices";
+import DataServices from "../dataServices/dataServices";  
+// *** Why is dataservices a js and not a jsx compnent??
 
 function Catalog () {
     const[product,setProduct]=useState([]);
@@ -10,10 +11,10 @@ function Catalog () {
     const [prodsToDisplay,setProdsToDisplay]=useState([]);
 
 // when component load, do something ( useEffect )
-    useEffect(function() {
+    useEffect(function() {  // *** why an empty function?? .--loadCatalog() includes setProduct() from useState to update variable product. As products are updated the function allows the const variables in useState to also update. (because cannot directly change a const variable)
         console.log("component");
         loadCatalog();
-    },[]); 
+    },[]);  // *** is this an empty array to allow for updates/changes
 
 
     function loadCatalog() { // get the products from the service
@@ -59,8 +60,9 @@ function Catalog () {
            
             <div className="catalog-item">
                 
-                {prodsToDisplay.map((p) => 
+                {prodsToDisplay.map((p) =>   // ** map is transforming the product variable into a component */
                 (<Product key={p._id} data={p}></Product>))}
+                                    {/* data object is a props */}
                 
             </div>
         </div>

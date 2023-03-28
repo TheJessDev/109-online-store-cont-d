@@ -5,8 +5,9 @@ import Footer from './components/footer';
 import Catalog from './pages/catalog';
 import Home from "./pages/home";
 import About from "./pages/about";
-
 import Cart from "./pages/cart";
+import Admin from "./pages/admin";
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap'; 
@@ -20,18 +21,21 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <h1>The Best Online Shoe Shop</h1>
-      <h5>Sale going on Now!</h5>
+      
 
       <BrowserRouter>
 
       <Navbar></Navbar>
+
+      <h5>Sale going on Now!</h5>
+      <h1>The Best Online Shoe Store</h1>
 
      <Routes>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/catalog' element={<Catalog/>}></Route>
       <Route path='/about' element={<About/>}></Route>
       <Route path='/cart' element={<Cart/>}></Route>
+      <Route path='/admin' element={<Admin/>}></Route>
      </Routes>
       
       

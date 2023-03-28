@@ -1,0 +1,16 @@
+.admin-page {
+   
+      
+}
+
+.manage {
+    display: flex;
+}
+
+.add-prods {
+    flex:1 ;
+}
+
+.add-coupon-codes {
+    flex:2;
+}
