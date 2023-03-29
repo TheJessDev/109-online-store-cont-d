@@ -1,7 +1,7 @@
 
 import "./product.css";
 import QuantityPicker from "./quantityPicker";
-import {useEffect,useState, useContext} from "react";
+import {useEffect, useState, useContext} from "react";
 import globalContext from '../state/globalContext';
 
 function Product(props) { 
@@ -46,7 +46,7 @@ function Product(props) {
            
             <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
         
-            <button type="button" className="add-btn btn btn-dark" onClick={(handleAddClick)}>Buy</button>
+            <button onClick={(handleAddClick)} type="button" className="add-btn btn btn-dark">Buy</button>
             
         </div>
     );

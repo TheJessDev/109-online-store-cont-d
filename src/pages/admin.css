@@ -1,17 +1,88 @@
 .admin-page {
-    min-height: 90vh;
-   
-      
+    min-height: 85vh;
+    background-color:#ffffff;    
+}
+
+.admin {
+    padding-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;   
+    line-height: 60px; 
+    letter-spacing: 1px;
+    background-color:#1C1C1C ;
+    color: #f2f2f2;
+    margin:0;
 }
 
 .manage {
     display: flex;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+.manage h4 {
+    padding-top: 5px;
 }
 
 .add-prods {
     flex:1 ;
+    margin-top: 40px;
+    background-color: #BFB8B0;
+    padding: 5px 10px;
+    border: 2px solid gray; 
+    margin: 20px 30px; 
+    border-radius: 5px;
+    max-width: 400px;
+    box-shadow: 2px 10px 8px 2px lightgrey; 
 }
 
 .add-coupon-codes {
-    flex:2;
+    flex:1;
+    margin-top: 40px;
+    background-color: #BFB8B0;
+    padding: 5px 10px;
+    border: 2px solid gray; 
+    margin: 20px 30px;
+    border-radius: 5px;
+    max-width: 400px; 
+    box-shadow: 2px 10px 8px 2px lightgrey; 
+}
+
+.mb-3 {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 350px) {
+    .mb-3 {
+        min-width: 350px;
+    }
+}
+.mb-3 input {
+    margin: 8px 0;
+    width: 275px;   
+}
+
+.input-save input {
+    border-radius: 4px;
+}
+
+.input-save button {
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.enter-input {
+    padding: 2px 5px;
+
+}
+
+.input-save .save-btn {
+    width: 100px;
+    color:#f2f2f2;
+    background-color:#485954;
+    border:1px solid black;
+   
+}
+.input-save .save-btn:hover {
+    background-color: #1a5423;
+    color: #f2f2f2;
 }

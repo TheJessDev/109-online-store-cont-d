@@ -15,8 +15,10 @@
 
 .App h5 {
   padding: 10px;
-  color: #e7174b;
+  background-color: #D92525;
+  color:#f2f2f2;
   font-size: 30px;
+  margin: 0;
 }
 
 

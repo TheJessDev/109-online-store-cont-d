@@ -3,24 +3,27 @@ import {useState} from 'react';
 
 
 function Admin() {
+    
     const [product, setProduct] = useState({});
     const [coupon, setCoupon] = useState ([]);
 
-    function handleTextChange(e) {  //Calls event 
-        const value = e.target.value;
-        const name = e.name.value;
+    function handleTextChange(e) {  // the e Calls Event info 
+        const value = e.target.value;  // target specifies where event takes place
+        const name = e.name.value;  // value is the new text in input field, info is saved in useState variable
+
+            // RULES
         // 1 DO NOT MODIFY STATE VARS
         // - Create a copy
         // - modify the copy
         // - set the copy back
-        let copy = {...product};
+        let copy = {...product};  // ... = spread operator, used for deep copies (grabs all the info in product)
         copy[name] = value;
         setProduct(copy);
        
     }
 
 
-    function handleCouponTextChange(e) {  //Calls event 
+    function handleCouponTextChange(e) {  // the e Calls Event 
         const value = e.target.value;
         const name = e.name.value;
 
@@ -30,51 +33,73 @@ function Admin() {
        
     }
 
-    function saveProduct() {
+    function saveProduct() {  // finish creating function
         console.log(product);
+
+        //const p = new product;
+        //setProduct(p);
+
     }
 
-    function saveCoupon() {
+    function saveCoupon() {  // finish creating function
         console.log(coupon)
 
     }
     
     return (
     <div className="admin-page">
-        <h1 className="admin">Welcome to the Admin Page</h1>
+        <h2 className="admin">Admin Page</h2>
 
         <main className="manage">
+
             <section className="add-prods">
-                <h3>Add a Product</h3>
+                <h4>Add a Product</h4>
                 <form>
-                    <input name="title" onChange={handleTextChange} type="text" className="text" placeholder="Product Title" />
+                    <div className="mb-3">
 
-                    <input type="text" className="category" placeholder="Category" />
-                    <input type="text" className="price" placeholder="Price $" />
+                        <div className="input-save">
+                            <input name="title" onChange={handleTextChange} type="text" className="enter-input" placeholder="Enter Product Title" />
+                        </div>
 
+                        <div className="input-save">
+                            <input name="category" onChange={handleTextChange} type="text" className="enter-input" placeholder="Enter Category" />
+                        </div>
 
-                    <input type="img" className="image" placeholder="Image" />
+                        <div className="input-save">
+                            <input name="price" onChange={handleTextChange} type="number" className="enter-input" placeholder="Enter Price $" />
+                        </div>
 
-                    {/* create <button type = "button">, save prod function ...onClick = (saveProduct), console.log */}
-                    <button type = "button" onClick = "saveProduct">Save</button>
+                        <div className="input-save">
+                            <input name="image" onChange={handleTextChange} type="img" className="enter-input" placeholder="Enter Image File" />
+                        </div>
 
+                        <div className="input-save">
+                            <button className="save-btn" type = "button" onClick = {saveProduct}>Save</button>
+                        </div>
 
-                    
+                    </div>  
                 </form>
             </section>
+
 
             <section className="add-coupon-codes">
-                <h3>Add a Coupon Code</h3>
-
+                <h4>Add a Coupon Code</h4>
                 <form>
-                    <input name="code" onChange={handleCouponTextChange} type="text" className="text" placeholder="Coupon Code" />
+                    <div className="mb-3">
 
-                    <input type="discount" className="category" placeholder="Discount" />
-                  
-
-
+                        <div className="input-save">
+                            <input name="code" onChange={handleCouponTextChange} type="text" className="enter-input" placeholder="Enter Coupon Code" />
+                        </div>
+                        <div className="input-save">
+                            <input name="discount" onChange={handleCouponTextChange} type="number" className="enter-input" placeholder="Enter Discount %" />
+                        </div>
+                        <div className="input-save">
+                            <button className="save-btn" type ="button" onClick = {saveCoupon}>Save</button>
+                        </div>
+                    </div>
                 </form>
             </section>
+
         </main>
         
         

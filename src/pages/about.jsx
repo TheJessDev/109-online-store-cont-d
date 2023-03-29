@@ -6,9 +6,7 @@ import {useState} from 'react';
 
     function toggleEmail() {
         console.log("hello");
-        setDisplayEmail(true);
-        
-        
+        setDisplayEmail(true);   
     }
 
     function getEmailSection() {
@@ -16,19 +14,20 @@ import {useState} from 'react';
         return <p className="email">shoes@gmail.com</p>
         }
         else {
-            return null
+            return null  // a return with no ().....?
         }
 
     }
 
-     return (
+     return (   // a return with ()....?
         <div className="About-page">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-            <h1>About Us</h1>
+            {/* <i class="fa fa-shopping-cart" aria-hidden="true"></i>  */}
+            <h2>About Us</h2>
             <p className="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vitae illum, quos praesentium qui aut inventore necessitatibus consequuntur cum ducimus iusto vel beatae laboriosam unde quidem impedit magni! Modi, sint.</p>
             <h3>Our Email</h3>
             {getEmailSection()}
-            <button className="view-email" onClick={toggleEmail}>Click to veiw email</button>
+            <button className="view-email" onClick={toggleEmail}>Click to veiw email</button> 
+             {/* when to call funtion with or without () ...?? */}
         </div>
      );
 

@@ -49,7 +49,7 @@ function Catalog () {
     return(
         <div className="catalog">
             <h2>New Arrivals</h2>
-            <h5>We have {product.length} new shoes for you</h5>
+            <h5 className="inventory">We have {product.length} new shoes for you</h5>
 
         
             <button onClick={clearFilter} className="btn btn-success btn-filter">All</button>

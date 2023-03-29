@@ -2,7 +2,7 @@ import "./home.css";
 
 function Home() {
     return ( <div className="Home">
-            <h1>Your Next Pair of Shoes are Here!</h1>
+            <h2>Your Next Pair of Shoes are Here!</h2>
 
             <div className="Main-photo">
             <img src="./img/Home.png"></img> 

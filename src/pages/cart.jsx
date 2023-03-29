@@ -5,7 +5,7 @@ function Cart(){
     return (
         <div className="Cart">
             
-            <h1>Are you ready to check out?</h1>
+            <h2>Are you ready to check out?</h2>
 
         </div>
     )
