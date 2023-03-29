@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       
-      <GlobalProvider>
+      <GlobalProvider>  
         <BrowserRouter>
           <Navbar></Navbar>
           <h5>Sale going on Now!</h5>

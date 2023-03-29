@@ -28,6 +28,9 @@ function Product(props) {
         let prodForCart = {...props.data};
         prodForCart.quantity = quantity;
         console.log (prodForCart);
+
+        // send the product to global cart
+        addToCart(prodForCart);
     }
 
 

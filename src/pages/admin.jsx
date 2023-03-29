@@ -5,7 +5,7 @@ import {useState} from 'react';
 function Admin() {
     
     const [product, setProduct] = useState({});
-    const [coupon, setCoupon] = useState ([]);
+    const [coupon, setCoupon] = useState ({});
 
     function handleTextChange(e) {  // the e Calls Event info 
         const value = e.target.value;  // target specifies where event takes place
@@ -42,7 +42,7 @@ function Admin() {
     }
 
     function saveCoupon() {  // finish creating function
-        console.log(coupon)
+        console.log(coupon);
 
     }
     

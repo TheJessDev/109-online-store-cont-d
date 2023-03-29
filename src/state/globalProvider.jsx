@@ -14,14 +14,13 @@ function GlobalProvider(props) {
         setCart(copy);
 
         console.log(copy);
-
     }
 
     function removeFromCart() {
         console.log("global remove");
     }
 
-    return <GlobalContext.Provider value={{
+    return <GlobalContext.Provider value={{   
         cart: cart,
         user: user,
         addToCart: addToCart,
@@ -30,3 +29,6 @@ function GlobalProvider(props) {
 }
 
 export default GlobalProvider;
+
+// GlobalProvider allows access to  the context storage
+// the impiltator 
