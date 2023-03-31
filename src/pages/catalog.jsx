@@ -70,3 +70,5 @@ function Catalog () {
 }
 export default Catalog;
 //{prodsToDisplay} line 55?
+
+

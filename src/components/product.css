@@ -1,4 +1,4 @@
-.product {
+.catalog-product {
     width: 250px; 
     height: 350px; 
     border-right: 2px solid #00257A;
@@ -18,7 +18,7 @@
     letter-spacing: 1px;
 }
 
-.product img {
+.catalog-product img {
     width:180px;
     height:130px;
     margin-bottom: 15px;

@@ -35,7 +35,7 @@ function Product(props) {
 
 
     return(
-        <div className="product">
+        <div className="catalog-product">
             <h4>{props.data.title}</h4>
 
             <img src={"/img/" + props.data.image} alt=""></img>

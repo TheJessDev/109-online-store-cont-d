@@ -40,7 +40,7 @@ var catalog = [
     },
 
     {
-        "title":"Decorative High Heels",
+        "title":"Floral High Heels",
         "category":"Women's",
         "price":59.99, 
         "image":"deco-heels.jpg",

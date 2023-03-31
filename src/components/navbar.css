@@ -6,4 +6,7 @@
     padding-top: 5px;
 }
 
+.navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: #ffffff;
 
+}
