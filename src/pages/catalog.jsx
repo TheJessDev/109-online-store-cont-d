@@ -17,9 +17,9 @@ function Catalog () {
     },[]);  // *** is this an empty array to allow for updates/changes
 
 
-    function loadCatalog() { // get the products from the service
+    async function loadCatalog() { // get the products from the service
         let service= new DataServices();
-        let prods = service.getProducts();
+        let prods = await service.getProducts();
         console.log(prods);
         setProduct(prods);
         let cat=["Men's","Women's"]; //create category men/women

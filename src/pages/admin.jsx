@@ -1,5 +1,6 @@
 import "./admin.css";
 import {useState} from 'react';
+import DataServices from "../dataServices/dataServices";
 
 
 function Admin() {
@@ -9,7 +10,7 @@ function Admin() {
 
     function handleTextChange(e) {  // the e Calls Event info 
         const value = e.target.value;  // target specifies where event takes place
-        const name = e.name.value;  // value is the new text in input field, info is saved in useState variable
+        const name = e.target.name;  // value is the new text in input field, info is saved in useState variable
 
             // RULES
         // 1 DO NOT MODIFY STATE VARS
@@ -25,7 +26,7 @@ function Admin() {
 
     function handleCouponTextChange(e) {  // the e Calls Event 
         const value = e.target.value;
-        const name = e.name.value;
+        const name = e.target.name;
 
         let copy = {...coupon};
         copy[name] = value;
@@ -36,8 +37,20 @@ function Admin() {
     function saveProduct() {  // finish creating function
         console.log(product);
 
+        // parse the price to a number before saving
+        let copy = {...product};
+        copy.price = parseFloat(copy.price);
+
+        let service = new DataServices();
+        service.saveProduct(copy);
+
         //const p = new product;
         //setProduct(p);
+
+        setProduct({  // finish setting values below and here
+            title: '',
+
+        });
 
     }
 
@@ -58,7 +71,7 @@ function Admin() {
                     <div className="mb-3">
 
                         <div className="input-save">
-                            <input name="title" onChange={handleTextChange} type="text" className="enter-input" placeholder="Enter Product Title" />
+                            <input name="title" value={product.title} onChange={handleTextChange} type="text" className="enter-input" placeholder="Enter Product Title" />
                         </div>
 
                         <div className="input-save">

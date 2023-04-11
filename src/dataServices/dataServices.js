@@ -1,3 +1,6 @@
+
+import axios from 'axios';
+
 var catalog = [ 
     {
         "title":"High Top",
@@ -40,7 +43,7 @@ var catalog = [
     },
 
     {
-        "title":"Floral High Heels",
+        "title":"Floral High Heels",  // update to "Floral" on Mongo db
         "category":"Women's",
         "price":59.99, 
         "image":"deco-heels.jpg",
@@ -65,8 +68,19 @@ var catalog = [
 ];
 
 class DataServices {
-    getProducts() {
-        return catalog;
+    async getProducts() {  //async must be on called function and also await to get response from server
+        // if you need to start the front end without the backend, uncomment the line below
+        //return catalog;
+
+        let response = await axios.get("http://127.0.0.1:5000/api/catalog");
+        return response.data;
+
+    // axios 
+    }
+
+    async saveProduct(product){
+        let response = await axios.post("http://127.0.0.1:5000/api/catalog", product);
+        return response.data;
     }
 }
 
